@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Neo4j
+Comment=Menu Neo4j
+Exec= /usr/bin/dbs-neo4j.sh
+Icon= /usr/share/applications/icon-neo4j-ss.png
+Terminal=true
+Type=Application
+Name[en_US]=Neo4j
+Name[pt_BR]=Neo4j
