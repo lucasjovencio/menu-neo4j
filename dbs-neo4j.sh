@@ -5,10 +5,10 @@ while true; do
     case $yn in
         [1]* ) 
 			if [ -d "/home/DataBases_Neo4j/" ];then
-			  echo "O diretório já existe e está pronto para receber novas istancias NEO4j"
+			  echo "O diretório já existe e está pronto para receber novas databases NEO4j"
 			else
-			  echo "diretório criado e preparado para receber novas databases NEO4J"
 			  sudo mkdir "/home/DataBases_Neo4j"
+			  echo "diretório criado e preparado para receber novas databases NEO4J"
 			fi
 			;;
         [2]* ) 
@@ -16,7 +16,7 @@ while true; do
 				echo "Informe um nome para a sua database NEO4J"
 				read -p "" din
 				if [ -d "/home/DataBases_Neo4j/"$din ]; then
-					echo "Nome da Database já existe, tenta com outro nome."
+					echo "Nome da Database já existe, tente outro nome."
 					else
 						cd /home
 						sudo wget http://neo4j.com/artifact.php?name=neo4j-community-3.0.0-unix.tar.gz && 
